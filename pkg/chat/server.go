@@ -1,5 +1,11 @@
 package chat
 
+import (
+	"fmt"
+
+	"golang.org/x/net/websocket"
+)
+
 type Server struct {
 	Clients []*Client
 	mu sync.mutex
